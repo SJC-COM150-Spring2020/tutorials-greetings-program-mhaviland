@@ -25,6 +25,8 @@ Partial Class Greetings
         Me.btnClick = New System.Windows.Forms.Button()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.lblHeading = New System.Windows.Forms.Label()
+        Me.lblName = New System.Windows.Forms.Label()
+        Me.txtOut = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnClick
@@ -57,12 +59,33 @@ Partial Class Greetings
         Me.lblHeading.TabIndex = 2
         Me.lblHeading.Text = "Greetings Program"
         '
+        'lblName
+        '
+        Me.lblName.AutoSize = True
+        Me.lblName.Font = New System.Drawing.Font("Lucida Sans", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.Location = New System.Drawing.Point(43, 196)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(192, 23)
+        Me.lblName.TabIndex = 3
+        Me.lblName.Text = "Enter your name"
+        '
+        'txtOut
+        '
+        Me.txtOut.Font = New System.Drawing.Font("Lucida Sans", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtOut.Location = New System.Drawing.Point(37, 370)
+        Me.txtOut.Multiline = True
+        Me.txtOut.Name = "txtOut"
+        Me.txtOut.Size = New System.Drawing.Size(395, 63)
+        Me.txtOut.TabIndex = 4
+        '
         'Greetings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Linen
         Me.ClientSize = New System.Drawing.Size(563, 476)
+        Me.Controls.Add(Me.txtOut)
+        Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.lblHeading)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.btnClick)
@@ -76,4 +99,6 @@ Partial Class Greetings
     Friend WithEvents btnClick As Button
     Friend WithEvents txtName As TextBox
     Friend WithEvents lblHeading As Label
+    Friend WithEvents lblName As Label
+    Friend WithEvents txtOut As TextBox
 End Class
